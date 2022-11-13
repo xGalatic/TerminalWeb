@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/tailwind.css" />
+        <script src="./javascript/lib.js" defer></script>
+        <script src="./javascript/main.js" defer></script>
+        <script src="./javascript/commands.js" defer></script>
+        <title>Visitor Terminal</title>
+    </head>
+    <body class="bg w-full h-full p-3" onclick="setFocus()" id="kernel">
+        <div
+            id="os"
+            class="text-info bg-dark w-full h-full p-2 border-2 border-warn rounded-lg overflow-y-auto"
+        >
+            <div id="output"></div>
+            <div class="flex" id="cmd">
+                <label
+                    >visitor@<span class="text-danger">Rama</span>:<span
+                        class="text-blue-500"
+                        id="dir-text"
+                        >~</span
+                    >$</label
+                >
+                <input
+                    type="text"
+                    id="command-line"
+                    class="ml-2 block w-full focus:outline-none bg-transparent caret-gray-500"
+                    autofocus
+                />
+            </div>
+            <div class="hidden" id="password">
+                <label>Password: </label>
+                <input
+                    type="password"
+                    id="password-line"
+                    class="ml-2 block w-full focus:outline-none bg-transparent caret-gray-500"
+                    autofocus
+                />
+            </div>
+        </div>
+    </body>
+</html>
